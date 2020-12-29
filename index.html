@@ -27,22 +27,22 @@
     </header>
     <main>
         <div class="container">
-            <div class="slider-frame" id="slider-frame">
-                <div class="slide-images">
-                    <div class="img-container">
-                        <img src="img/Air%20Max%20Plus.jpg">
-                    </div>
-                    <div class="img-container">
-                        <img src="img/Adapt%20BD.jpg">
-                    </div>
-                    <div class="img-container">
-                        <img src="img/Space%20Hippie.jpg">
-                    </div>
-                    <div class="img-container">
-                        <img src="img/Shox%20Gravity.jpg">
-                    </div>
-                </div>
+            <div class="slider">
+                <ul id="slider">
+                    <li><img src="img/Air%20Max%20Plus.jpg" alt="" /></li>
+                    <li><img src="img/Adapt%20BD.jpg" alt="" /></li>
+                    <li><img src="img/Space%20Hippie.jpg" alt="" /></li>
+                    <li><img src="img/Shox%20Gravity.jpg" alt="" /></li>
+                </ul>
+
+                <ul id="dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
+
             <div class="about_us _anim_item" id="about_us">
                 <h1>ABOUT US</h1>
                 <div class="wrapper">
@@ -170,8 +170,105 @@
                     </div>
                 </div>
             </div>
+            <div class="something">
+                <h1>SOMETHING</h1>
+                <div class="h_image">
+                    <h1>Image that hides on click</h1>
+                    <img src="img/hiding_image.jpg" alt="hiding_image" class="hiding_image" width="95%">
+                </div>
+                <h2 id="sortable">Sortable</h2>
+                <div>
+                    <ul class="sortable">
+                        <li>Block1</li>
+                        <li>Block2</li>
+                        <li>Block3</li>
+                    </ul>
+                </div>
+
+                <div id="tabs">
+                    <!-- Кнопки -->
+                    <ul class="tabs-nav">
+                        <li><a href="#tab-1" class="tab">Lorem</a></li>
+                        <li><a href="#tab-2" class="tab">Ipsum</a></li>
+                        <li><a href="#tab-3" class="tab">Dolor</a></li>
+                    </ul>
+
+                    <!-- Контент -->
+                    <div class="tabs-items">
+                        <div class="tabs-item" id="tab-1">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem dignissimos distinctio
+                                dolor ducimus eligendi eos esse est in incidunt magni molestias necessitatibus nisi
+                                omnis perspiciatis placeat quasi quia quos recusandae, reiciendis reprehenderit tempora
+                                tempore, temporibus tenetur voluptas. Asperiores debitis earum ipsa laborum
+                                necessitatibus nemo neque placeat praesentium quo voluptates!</p>
+                        </div>
+                        <div class="tabs-item" id="tab-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae fugit illum ipsam libero
+                                officia provident. Dignissimos illo ipsam iure natus nulla quasi quia, saepe? Aliquid
+                                architecto, assumenda aut cumque dolor doloremque eligendi et fuga illum iure maiores
+                                maxime nulla, perspiciatis porro, praesentium quae quas quibusdam quo recusandae rem
+                                sapiente sint.</p>
+                        </div>
+                        <div class="tabs-item" id="tab-3">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ex nam neque? Ab, ad
+                                aspernatur excepturi facilis, ipsa itaque libero nobis officiis quia quod, quos saepe
+                                sed sint vitae voluptatum. Ad amet exercitationem quam repudiandae ullam. Distinctio
+                                eius ex ipsum iure, libero necessitatibus numquam quaerat, ratione rerum ullam veritatis
+                                voluptas?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="accordion" class="accordion">
+                    <div class ="accordion_head">
+                        Lorem
+                    </div>
+                    <div class="accordion_body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolorum
+                        facere hic laudantium minima necessitatibus quos ullam, voluptate! Aut, cumque ea eius eos fugit
+                        perspiciatis quis! Dignissimos et libero magnam, numquam reiciendis sunt tenetur. Aliquid
+                        architecto facere fuga, inventore laboriosam modi nostrum perferendis porro possimus quo quos
+                        repellat, soluta ut.
+                    </div>
+                    <div class ="accordion_head">
+                        Ipsum
+                    </div>
+                    <div class="accordion_body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam
+                        consectetur culpa dolor ducimus et ex illo in ipsa itaque laudantium natus obcaecati odit
+                        officiis optio porro possimus quas repudiandae saepe similique sit tenetur ullam, unde. A
+                        aperiam distinctio eum, excepturi fugiat magnam maxime quisquam saepe soluta tenetur unde
+                        veritatis?
+                    </div>
+                    <div class ="accordion_head">
+                        Dolor
+                    </div>
+                    <div class="accordion_body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores
+                        atque aut eligendi eveniet facilis, illum in incidunt nam, necessitatibus nesciunt nulla
+                        numquam, officia praesentium quos rem reprehenderit sunt suscipit ullam veniam! Aperiam
+                        consequatur cupiditate labore quos sunt! Aliquid architecto doloribus expedita fuga iste iusto
+                        quisquam sed sequi unde voluptates?
+                    </div>
+                </div>
+
+                <div class ="radios">
+                    <input type="radio" name="selectFilm" class="radio_option" id="optionsRadios1">Lorem <input type="radio" name="selectFilm" class="radio_option" id="optionsRadios2">Ipsum <input type="radio" name="selectFilm" class="radio_option" id="optionsRadios3">Dolor
+                    <div id="hide" style="display:none;">Lorem ipsum dolor sit amet.</div>
+                    <div id="hideHorror" style="display:none;">
+                        <input type="radio" name="horrorRadio">Lorem
+                        <input type="radio" name="horrorRadio">ipsum
+                    </div>
+                    <div id="hideFantasy" style="display:none;">
+                        <input type="radio" name="fantasyRadio">dolor
+                        <input type="radio" name="fantasyRadio">sit
+                    </div>
+                    <div id="hideFighters" style="display:none;">
+                        <input type="radio" name="fighterRadio">amet
+                        <input type="radio" name="fighterRadio">consectetur
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+
     <footer>
         <div class="footer">
             <p>
@@ -184,6 +281,7 @@
             </div>
         </div>
     </footer>
+
     <div class="popup" id="popup">
         <div class="content">
             <a href="#nav" id="close_btn" class="icon">&#9587</a>
@@ -212,8 +310,12 @@
             </div>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/validation.js"></script>
     <script src="js/popup.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
